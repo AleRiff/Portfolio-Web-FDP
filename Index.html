@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Yamil</title>
+  <!-- Aca conectamos el CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="barra-arriba">
+    <div class="logo">
+      <span class="letra-y">Y</span>
+      <span>YAMIL ZARATE-WEISBECK</span>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#juegos">Juegos</a>
+      <a href="#informes">Informes</a>
+      <a href="#gameplays">Gameplays</a>
+    </nav>
+  </header>
+
+  <h1 id="inicio" onmouseover="cambiarColor(this)" onmouseout="restaurarColor(this)">Yamil Alejandro Zarate-Weisbeck</h1>
+  <p>Estudio Indie</p>
+
+  <h2 class="frase-principal">Desarrollador indie creando mundos jugables</h2>
+  <p>Convierto ideas en juegos que se sienten vivos: Kit de Brawl Stars caza pescados, un famoso cantante desaparece luego es reemplazado por un doble y un robot que salta entre plataformas. Pequeño estudio, grandes partidas.</p>
+
+  <div class="barrita-info">
+    <span class="chapita">UNPAZ</span>
+    <span class="chapita">Fundamentos de la Programación I</span>
+    <span class="chapita">Comisión B1</span>
+    <span class="chapita">Prof. Suárez Facundo Nicolas</span>
+    <span class="chapita">2026</span>
+  </div>
+
+  <button class="press-start" onclick="irAJuegos()">▶ PRESS START</button>
+
+  <h2 id="juegos">Mis Juegos</h2>
+  <p>Tres juegos reales, tres motores, tres formas de jugar.</p>
+
+  <div class="grilla-juegos">
+    <div class="tarjeta-juego">
+      <img src="kit.png" alt="Kit comiendo pescados">
+      <h3>🐱 Kit Comiendo Pescados</h3>
+      <p><b>Scratch - Arcade / 2D</b></p>
+      <p>Kit caza pescados que caen y suma puntos. Si un pescado toca el suelo, perdés.</p>
+      <a class="boton-jugar" href="https://scratch.mit.edu/projects/1368996098" target="_blank">▶ Jugar en Scratch</a>
+    </div>
+
+    <div class="tarjeta-juego">
+      <img src="billy.png" alt="Billy Is Here">
+      <h3>👻 Billy Is Here</h3>
+      <p><b>RPG Maker - RPG / Terror</b></p>
+      <p>Un RPG narrativo: puertas cerradas, una llave escondida y un final con persecución.</p>
+      <a class="boton-jugar" href="https://drive.google.com/file/d/1oAdySoNcFQF5pQQsmCnUHzqppovvJOzA/view?usp=drive_link" target="_blank">⬇ Descargar .exe</a>
+    </div>
+
+    <div class="tarjeta-juego">
+      <img src="gobot.png" alt="Gobot Adventures">
+      <h3>🤖 Gobot Adventures</h3>
+      <p><b>Godot - Plataformas / 3D</b></p>
+      <p>Juntá 6 monedas para pasar al mundo abierto. Aventura 3D con un robot.</p>
+      <a class="boton-jugar" href="https://drive.google.com/drive/folders/1RlTGNYvOenp1e2QZ8s7x0MmU7ZbJjkoW?usp=sharing" target="_blank">⬇ Descargar</a>
+      <a class="boton-editable" href="https://drive.google.com/file/d/1FpmYIYr7p7smx54-QJWnqwpyF3k96Mkn/view?usp=drivesdk" target="_blank">📂 Ver proyecto editable (Godot)</a>
+    </div>
+  </div>
+
+  <div class="seccion-informes" id="informes">
+    <h2 style="text-align:center;">Informes - Fundamentos de la Programación I</h2>
+    <p style="text-align:center;">Para facilitar la corrección - UNPAZ Comisión B1 - Prof. Suárez Facundo Nicolas - Alumno: Zarate Yamil Alejandro</p>
+
+    <div class="bloque-informe">
+      <h3>Informe 1 - Kit Comiendo Pescados (Scratch)</h3>
+      <p><b>Autores:</b> Daga Victoria Delfina y Zarate Yamil Alejandro</p>
+      <p>5 objetos, 2 fondos. Los pescados usan clones, caen aleatorios, suman +1 a la variable puntaje. Si tocan el fondo aparece "Perdiste". Aprendizajes: condicionales, ciclos, variables, constantes.</p>
+      <a class="boton-pdf" href="https://docs.google.com/document/d/1hKpZQIqjPUuupDKfUWAPcoKMVyG1_t5l/edit?usp=sharing&ouid=117787315648347535325&rtpof=true&sd=true" target="_blank">📄 Ver / Descargar Informe 1 en PDF</a>
+    </div>
+
+    <div class="bloque-informe">
+      <h3>Informe 2 - Billy Is Here (RPG Maker)</h3>
+      <p><b>Autor:</b> Zarate Yamil Alejandro</p>
+      <p>4 mapas: 2 interior, 2 exterior. Llave escondida en la planta, puerta con interruptores, piano, cassette secreto y persecución del asesino que quita 10000 PV. Aprendizajes: interruptores, condicionales, eventos.</p>
+      <a class="boton-pdf" href="https://docs.google.com/document/d/1pygAkDq0VeDTeHZ-4UG0JE77DcQiS-RHkJJJVmbJX18/edit?usp=sharing" target="_blank">📄 Ver / Descargar Informe 2 en PDF</a>
+    </div>
+
+    <div class="bloque-informe">
+      <h3>Informe 3 - Gobot Adventures (Godot - C#)</h3>
+      <p><b>Autor:</b> Zarate Yamil Alejandro</p>
+      <p>2 escenas 3D. Juntar 6 monedas para pasar de nivel. Diálogos con Array con el personaje de la Luz, booleanos para colisiones, _Process como ciclo. Aprendizajes: Arrays, Condicionales, Variables.</p>
+      <a class="boton-pdf" href="https://docs.google.com/document/d/1JV0qXfDXI08uyiuk0n7LKldgzWbJ-L4UDnz4q6ecCDE/edit?usp=sharing" target="_blank">📄 Ver / Descargar Informe 3 en PDF</a>
+    </div>
+  </div>
+
+  <div class="seccion-gameplays" id="gameplays">
+    <h2>Gameplays / Trailers</h2>
+    <p>Mirá los juegos en acción</p>
+    <div class="grilla-gameplays">
+      <div class="tarjeta-video">
+        <h3>Billy Is Here - Gameplay</h3>
+        <iframe src="https://www.youtube.com/embed/rFLURd1TK8U" allowfullscreen></iframe>
+        <a class="boton-youtube" href="https://youtu.be/rFLURd1TK8U" target="_blank">▶ Ver en YouTube</a>
+      </div>
+      <div class="tarjeta-video">
+        <h3>Gobot Adventures - Gameplay</h3>
+        <iframe src="https://www.youtube.com/embed/kOwGkGu_qCc" allowfullscreen></iframe>
+        <a class="boton-youtube" href="https://youtu.be/kOwGkGu_qCc" target="_blank">▶ Ver en YouTube</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aca conectamos el JS externo, siempre al final del body -->
+  <script src="script.js"></script>
+</body>
+</html>
